@@ -1,8 +1,8 @@
 import React from "react";
 
-function LoggerEnd() {
+function LoggerStart() {
   return (
-    <div className="logger-end">
+    <div className="logger-start">
       <div class="container">
               <div class="row align-items-center my-auto">
 
@@ -25,7 +25,7 @@ function LoggerEnd() {
             <fieldset>
                 <!-- Address form -->
          
-                <h2>Destination Address</h2>
+                <h2>Starting Address</h2>
          
                 
                 <!-- address-line1 input-->
@@ -321,7 +321,9 @@ function LoggerEnd() {
                  <div class="buttoncontainer">
           <div class="col-lg-12">
             <div class="col text-center">
-              <button class="btn btn-default">Next</button>
+                   <a class="btn btn-outline-info" href="/Pages/LoggerEnd" role="button">Link</a>
+                    <button class="btn btn-outline-info" type="submit">Log Destination</button>
+                   <input class="btn btn-outline-info" type="button" value="Input">
             </div>
           </div>
           </div>
@@ -346,4 +348,4 @@ function LoggerEnd() {
   );
 }
 
-export default LoggerEnd;
+export default LoggerStart;
