@@ -45,7 +45,7 @@ function Summary() {
                             <div class="col text-center">
                                 <a class="btn btn-success" href="/Pages/LoggerStart" role="button">Link</a>
                                 <button class="btn btn-success" type="submit">Log another trip</button>
-                                <input class="btn btn-success" type="button" value="Input">
+                                <input class="btn btn-success" type="button" value="Input"/>
                                 
             </div>
                             </div>

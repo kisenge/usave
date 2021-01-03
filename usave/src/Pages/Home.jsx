@@ -93,10 +93,10 @@ function Home() {
                         <div class="col-lg-4">
 
                             <form>
-                                <div class="form">
+                                <div class="form1">
                                     <label for="carMake">What is your car make?</label>
-                                    <input type="text" class="form-control" id="carMake" aria-describedby="carMake" placeholder="">
-                                        <small id="emailHelp" class="form-text text-muted">Its probably a pretty cool car.</small>
+                                    <input type="text" class="form-control" id="carMake" aria-describedby="carMake" placeholder="enter"/>
+                                        
               </div>
             </form>
 
@@ -111,7 +111,7 @@ function Home() {
                                 <div class="col text-center">
                                     <a class="btn btn-outline-info" href="/Pages/LoggerStart" role="button">Link</a>
                                     <button class="btn btn-outline-info" type="submit">Option 1</button>
-                                    <input class="btn btn-outline-info" type="button" value="Input">
+                                    <input class="btn btn-outline-info" type="button" value="Input"/>
             </div>
                                 </div>
                             </div>
@@ -123,7 +123,7 @@ function Home() {
                                     <h1 class="font-weight-bold">OR</h1>
                                     <p>Select vehicle type if you are unable to find car make?</p>
 
-                                    <!-- Pickups,SUVS(9.4L/100km), Midsize(5L/100km)  -->
+                                   /* Pickups,SUVS(9.4L/100km), Midsize(5L/100km)*/
 
 
 
@@ -139,14 +139,14 @@ function Home() {
                                             </div>
                                             <div class="col-auto my-1">
                                                 <div class="custom-control custom-checkbox mr-sm-2">
-                                                    <input type="checkbox" class="custom-control-input" id="customControlAutosizing">
+                                                    <input type="checkbox" class="custom-control-input" id="customControlAutosizing"/>
                                                         <label class="custom-control-label" for="customControlAutosizing">Remember my preference</label>
       </div>
                                                 </div>
                                                 <div class="col-auto my-1">
                                                     <a class="btn btn-outline-info" href="/Pages/LoggerStart" role="button">Link</a>
                                                     <button class="btn btn-outline-info" type="submit">Option 2</button>
-                                                    <input class="btn btn-outline-info" type="button" value="Input">
+                                                    <input class="btn btn-outline-info" type="button" value="Input"/>
     </div>
                                                 </div>
 </form>

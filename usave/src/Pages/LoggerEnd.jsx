@@ -1,4 +1,5 @@
 import React from "react";
+import MapContainer from '../Pages/MapContainer';
 
 function LoggerEnd() {
   return (
@@ -10,62 +11,67 @@ function LoggerEnd() {
 
                   <h4>(Feel free to use this map to find the address.)</h4>
 
-              <!--Google map-->
-                <div id="map-container-google-2" class="z-depth-1-half map-container" style="height: 300px">
-                  <iframe src="https://maps.google.com/maps?q=chicago&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
-                    style="border:0" allowfullscreen></iframe>
-                </div>
-
-                <!--Google Maps-->
+              <MapContainer />
 
 
-               <div class="address1">
-	        <div class="row">
-		 <form class="form-horizontal">
-            <fieldset>
-                <!-- Address form -->
+              
+                
          
                 <h2>Destination Address</h2>
+                <div class="address1">
+	<div class="row">
+		 <form class="form-horizontal">
+            <fieldset>
+                
+         
+                <h2>Address</h2>
          
                 
-                <!-- address-line1 input-->
+                
                 <div class="control-group">
                     <label class="control-label">Address Line 1</label>
                     <div class="controls">
                         <input id="address-line1" name="address-line1" type="text" placeholder="address line 1"
-                        class="input-xlarge">
-                        <p class="help-block">Street address</p>
+                        class="input-xlarge"/>
+                        <p class="help-block">Street address, P.O. box, company name, c/o</p>
+                    </div>
+                </div>
+               
+                <div class="control-group">
+                    <label class="control-label">Address Line 2</label>
+                    <div class="controls">
+                        <input id="address-line2" name="address-line2" type="text" placeholder="address line 2"
+                        class="input-xlarge"/>
+                        <p class="help-block">Apartment, suite , unit, building, floor, etc.</p>
                     </div>
                 </div>
                 
-                <!-- city input-->
                 <div class="control-group">
                     <label class="control-label">City / Town</label>
                     <div class="controls">
-                        <input id="city" name="city" type="text" placeholder="city" class="input-xlarge">
+                        <input id="city" name="city" type="text" placeholder="city" class="input-xlarge"/>
                         <p class="help-block"></p>
                     </div>
                 </div>
-
-                <!-- region input-->
+                
                 <div class="control-group">
                     <label class="control-label">State / Province / Region</label>
                     <div class="controls">
                         <input id="region" name="region" type="text" placeholder="state / province / region"
-                        class="input-xlarge">
+                        class="input-xlarge"/>
                         <p class="help-block"></p>
                     </div>
                 </div>
-                <!-- postal-code input-->
+                
                 <div class="control-group">
                     <label class="control-label">Zip / Postal Code</label>
                     <div class="controls">
                         <input id="postal-code" name="postal-code" type="text" placeholder="zip or postal code"
-                        class="input-xlarge">
+                        class="input-xlarge"/>
                         <p class="help-block"></p>
                     </div>
                 </div>
-                <!-- country select -->
+                
                 <div class="control-group">
                     <label class="control-label">Country</label>
                     <div class="controls">
@@ -317,13 +323,17 @@ function LoggerEnd() {
         </form>
 	</div>
 </div>
+         
+                
+                
+                
 
                  <div class="buttoncontainer">
           <div class="col-lg-12">
             <div class="col text-center">
                     <a class="btn btn-outline-info" href="/Pages/Summary" role="button">Link</a>
                     <button class="btn btn-outline-info" type="submit">Next</button>
-                   <input class="btn btn-outline-info" type="button" value="Input">
+                   <input class="btn btn-outline-info" type="button" value="Input"/>
             </div>
           </div>
           </div>
