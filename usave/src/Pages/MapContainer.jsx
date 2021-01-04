@@ -20,6 +20,8 @@ const MapContainer = () => {
                 zoom={13}
                 center={defaultCenter}
             />
+            
+        
         </LoadScript>
     )
 }

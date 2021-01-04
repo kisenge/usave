@@ -1,5 +1,6 @@
 import React from "react";
-import  MapContainer  from '../Pages/MapContainer';
+import MapContainer from '../Pages/MapContainer';
+
 
 function LoggerStart() {
   return (
@@ -10,9 +11,10 @@ function LoggerStart() {
                   <h2>Trip Starting Point</h2>
 
                   <h4>(Feel free to use this map to find the address.)</h4>
-
-              <MapContainer />
-
+                  <MapContainer/>
+                  
+                 
+                  
 
               
                 

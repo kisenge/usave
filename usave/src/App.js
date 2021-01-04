@@ -11,8 +11,12 @@ function App() {
               <Navigation />
               <Switch>
                   <Route path="/" exact component={() => <Home />} />
-                 
+                  <Route path="/LoggerStart" exact component={() => <LoggerStart />} />
+                  <Route path="/LoggerEnd" exact component={() => <LoggerEnd />} />
+                  <Route path="/Summary" exact component={() => <Summary />} />
+                  <Route path="/Home" exact component={() => <Home />} />
               </Switch>
+              
               <Footer />
           </Router>
 

@@ -1,6 +1,7 @@
 import React from "react";
-import earth from '../Media/earth.png'; // relative path to image
-
+import earth1 from '../Media/earth.png'; // relative path to image
+import { Link } from 'react-router-dom' ;
+import Button from '@material-ui/core/Button';
 
 
 function Home() {
@@ -11,11 +12,7 @@ function Home() {
 
                     <div class="col-lg-12">
                         <h1 class="font-weight-bold">Welcome To USave</h1>
-                        <img
-                            class="img-fluid rounded mb-4 mb-lg-0"
-                            src="earth"
-                            alt=""
-                        />
+                        
                     </div>
 
                     <div class="center-container">
@@ -23,7 +20,7 @@ function Home() {
                             <p>
                                 What brand is your car?
             </p>
-                           
+                            <img src={earth1}  alt="planet" />        
 
                             <form>
                                 <div class="form-row align-items-center">
@@ -123,15 +120,13 @@ function Home() {
 
 
 
-                        <div class="buttoncontainer">
-                            <div class="col-lg-12">
-                                <div class="col text-center">
-                                    <a class="btn btn-outline-info" href="/Pages/Home" role="button">Option 1</a>
-                                    
-                                    
-            </div>
-                                </div>
-                            </div>
+                        
+
+
+
+                    <Button component={Link} to="/LoggerStart">
+                     Option 1
+                    </Button>
 
 
 
@@ -155,10 +150,9 @@ function Home() {
                                                 </select>
                                             </div>
                                            
-                                                <div class="col-auto my-1">
-                                                    <a class="btn btn-outline-info" href="/Pages/LoggerStart" role="button">Option 2</a>
-                                                    
-    </div>
+                                <Button component={Link} to="/LoggerStart">
+                                Option 2
+                                </Button>
                                                 </div>
 </form>
 
